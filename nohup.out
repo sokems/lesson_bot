@@ -1,0 +1,1037 @@
+Updates were skipped successfully.
+Goodbye!
+Бот запущен
+Updates were skipped successfully.
+Goodbye!
+Бот запущен
+Updates were skipped successfully.
+Task exception was never retrieved
+future: <Task finished name='Task-50' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 115, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Goodbye!
+Бот запущен
+Updates were skipped successfully.
+Goodbye!
+Бот запущен
+Updates were skipped successfully.
+Goodbye!
+Бот запущен
+Updates were skipped successfully.
+Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=AttributeError("module 'markups' has no attribute 'support_b'")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 247, in text_massage
+    if message.text == markups.support_b:
+AttributeError: module 'markups' has no attribute 'support_b'
+Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=AttributeError("module 'markups' has no attribute 'support_b'")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 247, in text_massage
+    if message.text == markups.support_b:
+AttributeError: module 'markups' has no attribute 'support_b'
+Goodbye!
+Бот запущен
+Updates were skipped successfully.
+Goodbye!
+Бот запущен
+Updates were skipped successfully.
+Goodbye!
+Бот запущен
+Updates were skipped successfully.
+Task exception was never retrieved
+future: <Task finished name='Task-500' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=CantParseEntities("Can't parse entities: can't find end of the entity starting at byte offset 108")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 239, in text_massage
+    await message.answer(text=texts.want_pay_text, parse_mode='Markdown')
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/types/message.py", line 438, in answer
+    return await self.bot.send_message(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of the entity starting at byte offset 108
+Task exception was never retrieved
+future: <Task finished name='Task-520' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 115, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Task exception was never retrieved
+future: <Task finished name='Task-637' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 115, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Task exception was never retrieved
+future: <Task finished name='Task-786' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 115, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Task exception was never retrieved
+future: <Task finished name='Task-823' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 115, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Task exception was never retrieved
+future: <Task finished name='Task-867' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 115, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Task exception was never retrieved
+future: <Task finished name='Task-974' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 115, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Goodbye!
+Бот запущен
+Updates were skipped successfully.
+Goodbye!
+Бот запущен
+Updates were skipped successfully.
+Goodbye!
+Бот запущен
+Updates were skipped successfully.
+Goodbye!
+Бот запущен
+Updates were skipped successfully.
+Goodbye!
+Бот запущен
+Updates were skipped successfully.
+Goodbye!
+Бот запущен
+Updates were skipped successfully.
+Task exception was never retrieved
+future: <Task finished name='Task-65' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 115, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Goodbye!
+Бот запущен
+Updates were skipped successfully.
+Task exception was never retrieved
+future: <Task finished name='Task-215' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 115, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Task exception was never retrieved
+future: <Task finished name='Task-248' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 115, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Task exception was never retrieved
+future: <Task finished name='Task-414' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 115, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Task exception was never retrieved
+future: <Task finished name='Task-514' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 115, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Task exception was never retrieved
+future: <Task finished name='Task-672' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 115, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Task exception was never retrieved
+future: <Task finished name='Task-2622' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 115, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Task exception was never retrieved
+future: <Task finished name='Task-3840' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=CantParseEntities("Can't parse entities: can't find end of the entity starting at byte offset 108")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 238, in text_massage
+    await message.answer(text=texts.want_pay_text, parse_mode='Markdown')
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/types/message.py", line 438, in answer
+    return await self.bot.send_message(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of the entity starting at byte offset 108
+Task exception was never retrieved
+future: <Task finished name='Task-3866' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 115, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Task exception was never retrieved
+future: <Task finished name='Task-4278' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 115, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Task exception was never retrieved
+future: <Task finished name='Task-12755' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 115, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Task exception was never retrieved
+future: <Task finished name='Task-13175' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 115, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Task exception was never retrieved
+future: <Task finished name='Task-14815' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=CantParseEntities("Can't parse entities: can't find end of the entity starting at byte offset 108")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 238, in text_massage
+    await message.answer(text=texts.want_pay_text, parse_mode='Markdown')
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/types/message.py", line 438, in answer
+    return await self.bot.send_message(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of the entity starting at byte offset 108
+Task exception was never retrieved
+future: <Task finished name='Task-18746' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 115, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Goodbye!
+Бот запущен
+Updates were skipped successfully.
+Task exception was never retrieved
+future: <Task finished name='Task-1022' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 115, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/client.py", line 1141, in __aenter__
+    self._resp = await self._coro
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/client.py", line 560, in _request
+    await resp.start(conn)
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/client_reqrep.py", line 894, in start
+    with self._timer:
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/helpers.py", line 721, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
+Goodbye!
+Бот запущен
+Updates were skipped successfully.
+Goodbye!
+Бот запущен
+Goodbye!
+Updates were skipped successfully.
+Task exception was never retrieved
+future: <Task finished name='Task-64' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=AttributeError("module 'les_doc' has no attribute 'mod2_3_6'")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 3714, in text_massage
+    await bot.send_document(message.chat.id, les_doc.mod2_3_6, protect_content=True)
+AttributeError: module 'les_doc' has no attribute 'mod2_3_6'
+Task exception was never retrieved
+future: <Task finished name='Task-68' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=AttributeError("module 'les_doc' has no attribute 'mod2_3_5'")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 3710, in text_massage
+    await bot.send_document(message.chat.id, les_doc.mod2_3_5, protect_content=True)
+AttributeError: module 'les_doc' has no attribute 'mod2_3_5'
+Task exception was never retrieved
+future: <Task finished name='Task-72' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=AttributeError("module 'les_doc' has no attribute 'mod2_3_6'")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 3714, in text_massage
+    await bot.send_document(message.chat.id, les_doc.mod2_3_6, protect_content=True)
+AttributeError: module 'les_doc' has no attribute 'mod2_3_6'
+Task exception was never retrieved
+future: <Task finished name='Task-76' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=AttributeError("module 'les_doc' has no attribute 'mod2_3_7'")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 3720, in text_massage
+    await bot.send_document(message.chat.id, les_doc.mod2_3_7, protect_content=True)
+AttributeError: module 'les_doc' has no attribute 'mod2_3_7'
+Task exception was never retrieved
+future: <Task finished name='Task-553' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=BadRequest('There is no video in the request')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 1913, in text_massage
+    await bot.send_video(message.chat.id, les_doc.mod1_3_1, protect_content=True)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/bot.py", line 864, in send_video
+    result = await self.request(api.Methods.SEND_VIDEO, payload, files)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/utils/exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: There is no video in the request
+Task exception was never retrieved
+future: <Task finished name='Task-558' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=BadRequest('There is no video in the request')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 1917, in text_massage
+    await bot.send_video(message.chat.id, les_doc.mod1_3_2, protect_content=True)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/bot.py", line 864, in send_video
+    result = await self.request(api.Methods.SEND_VIDEO, payload, files)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/utils/exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: There is no video in the request
+Goodbye!
+Бот запущен11:01 | 09.03.2023
+Updates were skipped successfully.
+Goodbye!
+Бот запущен13:09 | 09.03.2023
+Updates were skipped successfully.
+Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/client.py", line 1141, in __aenter__
+    self._resp = await self._coro
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/client.py", line 560, in _request
+    await resp.start(conn)
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/client_reqrep.py", line 894, in start
+    with self._timer:
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/helpers.py", line 721, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
+Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/connector.py", line 980, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore[return-value]  # noqa
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1064, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1049, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 960, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 500, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 505, in _sock_connect
+    sock.connect(address)
+OSError: [Errno 101] Network is unreachable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/client.py", line 1141, in __aenter__
+    self._resp = await self._coro
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/connector.py", line 1206, in _create_direct_connection
+    raise last_exc
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/connector.py", line 1175, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/connector.py", line 988, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/connector.py", line 980, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore[return-value]  # noqa
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1064, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1049, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 960, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 500, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 505, in _sock_connect
+    sock.connect(address)
+OSError: [Errno 101] Network is unreachable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/client.py", line 1141, in __aenter__
+    self._resp = await self._coro
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/connector.py", line 1206, in _create_direct_connection
+    raise last_exc
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/connector.py", line 1175, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "/usr/local/lib/python3.10/dist-packages/aiohttp/connector.py", line 988, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 128, in check_result
+    raise exceptions.TelegramAPIError(description)
+aiogram.utils.exceptions.TelegramAPIError: Bad Gateway
+Task exception was never retrieved
+future: <Task finished name='Task-25881' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 116, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Goodbye!
+Бот запущен13:12 | 09.03.2023
+Updates were skipped successfully.
+Goodbye!
+Бот запущен14:23 | 19.03.2023
+Updates were skipped successfully.
+Goodbye!
+Бот запущен15:52 | 19.03.2023
+Updates were skipped successfully.
+Task exception was never retrieved
+future: <Task finished name='Task-9139' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 120, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 128, in check_result
+    raise exceptions.TelegramAPIError(description)
+aiogram.utils.exceptions.TelegramAPIError: Bad Gateway
+Task exception was never retrieved
+future: <Task finished name='Task-22347' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 120, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Task exception was never retrieved
+future: <Task finished name='Task-23104' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 120, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Task exception was never retrieved
+future: <Task finished name='Task-23206' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 120, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Goodbye!
+Бот запущен12:35 | 20.03.2023
+Updates were skipped successfully.
+Goodbye!
+Бот запущен16:33 | 25.03.2023
+Updates were skipped successfully.
+Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 128, in check_result
+    raise exceptions.TelegramAPIError(description)
+aiogram.utils.exceptions.TelegramAPIError: Bad Gateway
+Goodbye!
+Бот запущен17:43 | 25.03.2023
+Updates were skipped successfully.
+Task exception was never retrieved
+future: <Task finished name='Task-3590' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 120, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Goodbye!
+Бот запущен14:28 | 29.03.2023
+Updates were skipped successfully.
+Task exception was never retrieved
+future: <Task finished name='Task-2891' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 120, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Task exception was never retrieved
+future: <Task finished name='Task-4320' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=CantParseEntities("Can't parse entities: can't find end of the entity starting at byte offset 108")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 259, in text_massage
+    await message.answer(text=texts.want_pay_text, parse_mode='Markdown')
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/types/message.py", line 438, in answer
+    return await self.bot.send_message(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of the entity starting at byte offset 108
+Task exception was never retrieved
+future: <Task finished name='Task-4324' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=CantParseEntities("Can't parse entities: can't find end of the entity starting at byte offset 108")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 259, in text_massage
+    await message.answer(text=texts.want_pay_text, parse_mode='Markdown')
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/types/message.py", line 438, in answer
+    return await self.bot.send_message(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of the entity starting at byte offset 108
+Task exception was never retrieved
+future: <Task finished name='Task-8454' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: pay_date')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/istyakov_leason_bot/start_bot.py", line 120, in text_massage
+    cur.execute(f"UPDATE users SET pay_date = '{date}' WHERE id_user = '{int(message.text)}'")
+sqlite3.OperationalError: no such column: pay_date
+Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 128, in check_result
+    raise exceptions.TelegramAPIError(description)
+aiogram.utils.exceptions.TelegramAPIError: Bad Gateway
+Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/bot/api.py", line 111, in check_result
+    raise exceptions.RetryAfter(parameters.retry_after)
+aiogram.utils.exceptions.RetryAfter: Flood control exceeded. Retry in 5 seconds.
+Goodbye!
+Бот запущен17:11 | 30.03.2023
